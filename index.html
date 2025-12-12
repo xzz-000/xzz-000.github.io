@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
 
     <!--- basic page needs
@@ -26,11 +27,13 @@
 
     <!-- favicons  favicons 是指网站的图标，通常显示在浏览器标签页、书签栏或浏览器的其他 UI 元素中。
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><!--作为网站的标题上的横行的一栏-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/portrait.jpg"><!--作为网站的标题上的横行的一栏-->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/portrait.jpg"><!--作为网站的标题上的横行的一栏-->
+    <link rel="manifest" href="site.webmanifest"><!--让网站可以像原生App一样被安装到手机/电脑主屏幕！-->
+    <!--这个标签的作用是为苹果iOS设备的Safari浏览器定义"添加到主屏幕"的网页图标。
+         核心功能
+    当iPhone/iPad用户访问你的网站时，可以通过Safari的"添加到主屏幕"功能创建一个类似App的快捷方式。这个标签就是指定这个快捷方式上显示的图标.-->
 </head>
 
 <body id="top">
@@ -38,15 +41,15 @@
 
     <!-- preloader
     ================================================== -->
-    <div id="preloader">        
+    <div id="preloader">
         <div id="loader"></div>
     </div>
-
+     <!-- 这是页面预加载动画的HTML骨架     -->
 
     <!-- header
     ================================================== -->
     <header class="s-header"><!--作为网站的标题上的横行的一栏-->
-            <div class="row"><!--网站上方的标题和目录，让其居中的环境-->>
+        <div class="row"><!--网站上方的标题和目录，让其居中的环境-->>
 
             <div class="s-header__logo">
                 <a href="index.html">
@@ -77,7 +80,8 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000">
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
+        data-natural-width="3000" data-natural-height="2000">
 
         <div class="s-home__content">
 
@@ -87,11 +91,11 @@
                     <div class="row">
                         <div class="column large-12 s-home__slide-text">
                             <h2>
-                            Hello, i am  <span>Xiaox</span>.
-                            welcome to my awesome creative studio.
+                                Hello, i am <span>Xiaox</span>.
+                                welcome to my awesome creative studio.
                             </h2>
                             <p>
-                            there are many messages of  myself available, but not the majority.
+                                there are many messages of myself available, but not the majority.
                             </p>
                         </div>
                     </div>
@@ -101,10 +105,10 @@
                     <div class="row">
                         <div class="column large-12 s-home__slider-text">
                             <h2>
-                           There are many things i like to do.
+                                There are many things i like to do.
                             </h2>
                             <p>
-                            Chasing the moon with a pure heart
+                                Chasing the moon with a pure heart
                             </p>
                         </div>
                     </div>
@@ -113,14 +117,18 @@
             </div> <!-- end s-home__slider -->
 
         </div> <!-- end s-home__content -->
-             
+
 
         <div class="s-home__nav-arrows">
             <div class="s-home__arrow-prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z" />
+                </svg>
             </div>
             <div class="s-home__arrow-next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.293 17.293l1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M11.293 17.293l1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
+                </svg>
             </div>
         </div> <!-- end s-home__nav-arrows 导航箭头用来切换内容，例如轮播等 -->
 
@@ -142,18 +150,18 @@
 
             <div class="column large-8 medium-12 align-x-right" data-aos="fade-up">
                 <p class="lead">
-                Life never ceases, and the pursuit knows no bounds.
+                    Life never ceases, and the pursuit knows no bounds.
                 </p>
             </div>
         </div> <!-- end section-head -->
 
         <div class="row block-large-1-3 block-medium-1-2 block-tab-full services-list">
-        <!--这里面column services-item自动生成标号来列出来下面的六个方面-->
+            <!--这里面column services-item自动生成标号来列出来下面的六个方面-->
             <div class="column services-item" data-aos="fade-up">
                 <h5>Pingpang</h5>
                 <p>
-                Pingpang is a great way to stay active and have fun. It improves hand-eye coordination and reflexes.
-                
+                    Pingpang is a great way to stay active and have fun. It improves hand-eye coordination and reflexes.
+
                 </p>
             </div> <!-- end services-item -->
 
@@ -162,7 +170,8 @@
             <div class="column services-item" data-aos="fade-up">
                 <h5>Swimming</h5>
                 <p>
-                swimming is a great way to stay fit and healthy. It works out the entire body and is easy on the joints.
+                    swimming is a great way to stay fit and healthy. It works out the entire body and is easy on the
+                    joints.
                 </p>
             </div> <!-- end services-item -->
 
@@ -171,30 +180,34 @@
             <div class="column services-item" data-aos="fade-up">
                 <h5>Running</h5>
                 <p>
-                Running is a great way to improve cardiovascular health and endurance. It also helps to reduce stress and boost mood.
+                    Running is a great way to improve cardiovascular health and endurance. It also helps to reduce
+                    stress and boost mood.
                 </p>
             </div> <!-- end services-item -->
 
             <div class="column services-item" data-aos="fade-up">
                 <h5>Reading</h5>
                 <p>
-                Literature opens up new worlds and perspectives. It enhances knowledge, vocabulary, and critical thinking skills.
-                Fiction and non-fiction alike offer valuable insights into the human experience.
+                    Literature opens up new worlds and perspectives. It enhances knowledge, vocabulary, and critical
+                    thinking skills.
+                    Fiction and non-fiction alike offer valuable insights into the human experience.
                 </p>
             </div> <!-- end services-item -->
 
             <div class="column services-item" data-aos="fade-up">
                 <h5>Programming</h5>
                 <p>
-                Programming is a valuable skill that enables problem-solving and creativity. It opens up opportunities in various industries and fosters logical thinking.
+                    Programming is a valuable skill that enables problem-solving and creativity. It opens up
+                    opportunities in various industries and fosters logical thinking.
                 </p>
-            
+
             </div> <!-- end services-item -->
 
             <div class="column services-item" data-aos="fade-up">
                 <h5>calligraphy</h5>
                 <p>
-                Calligraphy is a beautiful art form that combines creativity and precision. It enhances fine motor skills .
+                    Calligraphy is a beautiful art form that combines creativity and precision. It enhances fine motor
+                    skills .
                 </p>
             </div> <!-- end services-item -->
 
@@ -215,7 +228,7 @@
 
             <div class="column large-8 medium-12 align-x-right" data-aos="fade-up">
                 <p class="lead">
-                Vlog records every bit of lif
+                    Vlog records every bit of lif
                 </p>
             </div>
         </div> <!-- end section-head -->
@@ -224,8 +237,7 @@
 
             <div class="column folio-item" data-aos="fade-up">
                 <a href="#modal-01" class="folio-item__thumb" data-lity>
-                    <img src="images/plog/summer2.png" 
-                         srcset="" alt="11">
+                    <img src="images/plog/summer2.png" srcset="" alt="11">
                     <span class="folio-item__text">
                         summer2
                     </span>
@@ -234,20 +246,18 @@
 
             <div class="column folio-item" data-aos="fade-up">
                 <a href="#modal-02" class="folio-item__thumb" data-lity>
-                    <img src="images/plog/camera2.png" 
-                         srcset="" alt="">
+                    <img src="images/plog/camera2.png" srcset="" alt="">
                     <span class="folio-item__text">
                         The Zootopia!
                     </span>
                 </a>
             </div> <!-- end folio-item -->
-              
+
 
             <div class="column folio-item" data-aos="fade-up">
                 <a href="#modal-02" class="folio-item__thumb" data-lity>
-                    <img src="images/plog/水墨画.jpg" 
-                         srcset="" alt="">
-                  
+                    <img src="images/plog/水墨画.jpg" srcset="" alt="">
+
 
                     <span class="folio-item__text">
                         水墨画！
@@ -266,10 +276,11 @@
             <div class="modal-popup__desc">
                 <h5>niushoushan</h5>
                 <p>this is the expensive tourist spot in Nanjing.</p>
-                
+
             </div>
 
-            <a href="https://cn.bing.com/search?q=%E5%8D%97%E4%BA%AC%E7%89%9B%E9%A6%96%E5%B1%B1%E9%A3%8E%E6%99%AF%E5%8C%BA&FORM=QSRE5" class="modal-popup__details">Spot link</a>
+            <a href="https://cn.bing.com/search?q=%E5%8D%97%E4%BA%AC%E7%89%9B%E9%A6%96%E5%B1%B1%E9%A3%8E%E6%99%AF%E5%8C%BA&FORM=QSRE5"
+                class="modal-popup__details">Spot link</a>
 
         </div> <!-- end modal-01 -->
 
@@ -300,7 +311,7 @@
 
             <div class="column large-8 medium-12 align-x-right" data-aos="fade-up">
                 <p class="lead">
-                A playwright who plays basketball in Parma
+                    A playwright who plays basketball in Parma
                 </p>
             </div>
         </div> <!-- end section-head -->
@@ -315,186 +326,192 @@
 
             <div class="column process" data-aos="fade-up">
                 <h6>elementary school.</h6>
-    
+
                 <p>
-                An ordinary county primary school
+                    An ordinary county primary school
                 </p>
 
                 <div class="education-member__pic">
-                    <img src="images/education/elementary.png" 
-                         srcset="" alt="elementary school"><!-- srcset-->
+                    <img src="images/education/elementary.png" srcset="" alt="elementary school"><!-- srcset-->
                 </div>
                 <!--srcset 是 HTML 中 <img> 标签的一个属性，用于为图片提供多个分辨率或尺寸的选项。
                 浏览器会根据设备的屏幕分辨率或网络条件，自动选择最合适的图片进行加载。-->
             </div>
-   
+
             <div class="column process" data-aos="fade-up">
-               <h6>senior high school.</h6>
-   
+                <h6>senior high school.</h6>
+
                 <p>
-                County key middle school
+                    County key middle school
                 </p>
                 <div class="education-member__pic">
-                    <img src="images/education/senior high school.png" 
-                         srcset="images/education/senior high school.png 1x, 
+                    <img src="images/education/senior high school.png" srcset="images/education/senior high school.png 1x, 
                                  images/education/senior high school@2x.png 2x" alt="">
                 </div>
             </div>
-   
+
             <div class="column process" data-aos="fade-up">
                 <h6>university.</h6>
-   
+
                 <p>
-                NUAA ( Nanjing University of Aeronautics and Astronautics)
+                    NUAA ( Nanjing University of Aeronautics and Astronautics)
                 </p>
                 <div class="education-member__pic">
-                    <img src="images/education/university.png" 
-                         srcset="" alt="">
+                    <img src="images/education/university.png" srcset="" alt="">
                 </div>
             </div>
-   
+
             <div class="column process" data-aos="fade-up">
                 <h6>Future.</h6>
-    
+
                 <p>
-                The future is always full of colors
+                    The future is always full of colors
                 </p>
                 <div class="education-member__pic">
-                    <img src="images/education/future.png" 
-                         srcset="" alt="">
-                </div>
-            </div>
-   
-         </div> <!-- end process-block -->
-
-    <!-- CTA
-    ================================================== -->
-    <section class="s-cta ss-dark">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column">
-                <h2 class="section-desc">
-                    Need a great reliable web hosting?
-                </h2>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row cta-content" data-aos="fade-up">
-            <div class="column">
-                <p>
-                We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
-                Powerful web and Wordpress hosting. Guaranteed.
-                Starting at $2.95 per month.
-                </p>
-
-                <a href="https://www.dreamhost.com/r.cgi?287326" class="btn h-full-width">Get Started</a>
-            </div>
-        </div> <!-- end ad-content -->
-
-    </section> <!-- end s-cta   -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section s-dark">
-
-        <div class="row section-head">
-            <div class="column large-3 medium-12">
-                <h2>Contact Ms</h2>
-                <p class="desc">Get in touch with ms.</p>
-            </div>
-        </div> <!-- end section-head -->
-
-        <div class="row s-contact__content">
-
-            <div class="column large-7 medium-12">
-                <h3 class="display-1">
-                    If you have anything to contact me about, please fill in the email address below
-
-                </h3>
-
-                <div class="s-contact__email-us">
-                    <a href="mailto:#0" class="btn btn--primary h-full-width">Let's Talk</a>
+                    <img src="" srcset="" alt="">
                 </div>
             </div>
 
-            <div class="column large-4 medium-12 s-contact__info-blocks">
-                <div class="row">
-                    <div class="column large-12 medium-6 tab-12">
-                        <div class="s-contact__info-block">
-                            
-                            <span class="s-contact__info-block-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"/><path d="M11.42 21.814a.998.998 0 001.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"/></svg>
-                            </span>
-        
-                            <h5>Find ms here</h5>
-                            <p>
-                            NUAA <br>
-                            Cuiping Mountain <br>
-                            94043 US
-                            </p>
-                        </div> <!-- end s-contact__info-block -->
-                    </div>
+        </div> <!-- end process-block -->
 
-                    <div class="column large-12 medium-6 tab-12">
-                        <div class="s-contact__info-block">
-                            <span class="s-contact__info-block-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.707 12.293a.999.999 0 00-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 000-1.414l-4-4a.999.999 0 00-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 000-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 00-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 00.912-.271L17 14.414 19.586 17l-2.006 2.005z"/></svg>
-                            </span>
-        
-                            <h5>Say hello</h5>
-                            <p>
-                            xiaox@qq.com <br>
-                            +197 543 2345 <br>
-
-                            </p>
-                        </div> <!-- end s-contact__info-block -->
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end s-contact__info-blocks -->
-
-        </div> <!-- end s-contact__content -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
+        <!-- CTA
     ================================================== -->
-    <footer class="s-footer">
-        <div class="row">
-            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
-                <ul class="s-footer__social">
-                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-weixin" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-qq" aria-hidden="true"></i></a></li>
-                
-                </ul>
+        <section class="s-cta ss-dark">
+
+            <div class="row heading-block heading-block--center" data-aos="fade-up">
+                <div class="column">
+                    <h2 class="section-desc">
+                        Need a great reliable web hosting?
+                    </h2>
+                </div>
+            </div> <!-- end heading-block -->
+
+            <div class="row cta-content" data-aos="fade-up">
+                <div class="column">
+                    <p>
+                        We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
+                        Powerful web and Wordpress hosting. Guaranteed.
+                        Starting at $2.95 per month.
+                    </p>
+
+                    <a href="https://www.dreamhost.com/r.cgi?287326" class="btn h-full-width">Get Started</a>
+                </div>
+            </div> <!-- end ad-content -->
+
+        </section> <!-- end s-cta   -->
+
+
+        <!-- contact
+    ================================================== -->
+        <section id="contact" class="s-contact target-section s-dark">
+
+            <div class="row section-head">
+                <div class="column large-3 medium-12">
+                    <h2>Contact Ms</h2>
+                    <p class="desc">Get in touch with ms.</p>
+                </div>
+            </div> <!-- end section-head -->
+
+            <div class="row s-contact__content">
+
+                <div class="column large-7 medium-12">
+                    <h3 class="display-1">
+                        If you have anything to contact me about, please fill in the email address below
+
+                    </h3>
+
+                    <div class="s-contact__email-us">
+                        <a href="mailto:#0" class="btn btn--primary h-full-width">Let's Talk</a>
+                    </div>
+                </div>
+
+                <div class="column large-4 medium-12 s-contact__info-blocks">
+                    <div class="row">
+                        <div class="column large-12 medium-6 tab-12">
+                            <div class="s-contact__info-block">
+
+                                <span class="s-contact__info-block-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path
+                                            d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+                                        <path
+                                            d="M11.42 21.814a.998.998 0 001.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z" />
+                                    </svg>
+                                </span>
+
+                                <h5>Find ms here</h5>
+                                <p>
+                                    NUAA <br>
+                                    Cuiping Mountain <br>
+                                    94043 US
+                                </p>
+                            </div> <!-- end s-contact__info-block -->
+                        </div>
+
+                        <div class="column large-12 medium-6 tab-12">
+                            <div class="s-contact__info-block">
+                                <span class="s-contact__info-block-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path
+                                            d="M17.707 12.293a.999.999 0 00-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 000-1.414l-4-4a.999.999 0 00-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 000-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 00-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 00.912-.271L17 14.414 19.586 17l-2.006 2.005z" />
+                                    </svg>
+                                </span>
+
+                                <h5>Say hello</h5>
+                                <p>
+                                    xiaox@qq.com <br>
+                                    +197 543 2345 <br>
+
+                                </p>
+                            </div> <!-- end s-contact__info-block -->
+                        </div>
+                    </div> <!-- end row -->
+                </div> <!-- end s-contact__info-blocks -->
+
+            </div> <!-- end s-contact__content -->
+
+        </section> <!-- end s-contact -->
+
+
+        <!-- footer
+    ================================================== -->
+        <footer class="s-footer">
+            <div class="row">
+                <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                    <ul class="s-footer__social">
+                        <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a href="#0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#0"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="#0"><i class="fab fa-weixin" aria-hidden="true"></i></a></li>
+                        <li><a href="#0"><i class="fab fa-qq" aria-hidden="true"></i></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                    <span>© Copyright Xiaox 2020</span>
+                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                </div>
             </div>
 
-            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
-                <span>© Copyright Xiaox 2020</span> 
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-            </div>
-        </div>
-
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
-            </a>
-        </div> <!-- end ss-go-top -->
-    </footer>
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
+                    </svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </footer>
 
 
-    <!-- Java Script
+        <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
 </body>
 
