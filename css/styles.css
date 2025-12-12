@@ -3116,25 +3116,32 @@ input::-moz-focus-inner {
 }
 
 .s-header__logo a {
-    display: block;
-    height: var(--logo-height);
-    padding: 0;
-    outline: 0;
-    border: none;
+    display: block;            /* 转为块级元素，可设置宽高 */
+    height: var(--logo-height); /* 使用CSS变量定义高度 */
+    padding: 0;                /* 清除默认内边距 */
+    outline: 0;                /* 去除焦点时的外轮廓线 */
+    border: none;              /* 去除边框 */
+    
+    /* 过渡动画：所有属性变化都有0.3秒平滑效果 */
     -webkit-transition: all .3s;
     transition: all .3s;
+    
+    /* 垂直居中核心：向上偏移自身高度的50% */
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    
+    /* 绝对定位 */
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 10%;   /* ⚠️ 关键点：相对于父容器顶部向下偏移80% */
+    left: 0;    /* 紧贴父容器左侧 */
 }
 
 .s-header__logo img {
-    vertical-align: top;
-    width: var(--logo-width);
-    height: var(--logo-height);
-    margin: 0;
+    top: 80%;
+    vertical-align: top;        /* 消除图片默认的垂直对齐间隙 */
+    width: 80px;   /* 使用CSS变量设置宽度 */
+    height: 80px; /* 使用CSS变量设置高度 */
+    margin: 0;                  /* 重置外边距 */
 }
 
 /* -------------------------------------------------------------------
