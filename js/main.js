@@ -87,6 +87,19 @@
         });
     };
 
+/* QQ Email Button
+*/
+    const qqEmailBtn = document.getElementById('qq-email-btn');
+qqEmailBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    // 构造QQ邮箱的写信页面URL
+    const email = '3145648529@qq.com';
+    const subject = encodeURIComponent('contracting'); // 可选
+    const qqMailUrl = `https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=${email}&subject=${subject}`;
+    
+    // 在新标签页打开
+    window.open(qqMailUrl, '_blank');
+});
 
 
    /* Mobile Menu
